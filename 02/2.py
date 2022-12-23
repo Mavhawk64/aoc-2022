@@ -14,6 +14,7 @@ points = 0
 for i in combos:
     # Add the points based on X, Y, Z
     points += combos[i]*(3 * b.index(i[1]))
+    # I guarantee there is a better way to do this, but I'm tired
     # if X -> a.index(a[(a.index(i[0]) - 1) % 3]) + 1
     # if Y -> a.index(i[0]) + 1
     # if Z -> a.index(a[(a.index(i[0]) + 1) % 3]) + 1
